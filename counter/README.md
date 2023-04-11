@@ -7,11 +7,11 @@ b. Start the local okc network or directly link to the test network.
 
 ## 2、Compile the wasm contract
 ```
-$ cd project/WASMContract
+$ cd project/WASMContracts/Counter
 
 $ RUSTFLAGS='-C link-arg=-s' cargo wasm
 ```
-You can also compile in other ways, but make sure the generated files are in the path `project/WASMContract/target/wasm32-unknown-unknown/release/`
+You can also compile in other ways, but make sure the generated files are in the path `project/WASMContracts/Counter/target/wasm32-unknown-unknown/release/`
 
 ## 3、Deploy and test
 ```

@@ -4,13 +4,16 @@ require('dotenv').config();
 
 module.exports = {
     solidity: "0.8.17",
-    defaultNetwork: "localOKC",
     networks: {
         hardhat: {
         },
-        localOKC: {
+        OKCTest: {
+            url: "https://exchaintestrpc.okex.org",
+            accounts: [process.env.TEST_USER1_PRIVATE_KEY]
+        },
+        localHost: {
             url: "http://localhost:8545",
             accounts: [process.env.TEST_USER1_PRIVATE_KEY]
-        }
+        },
     }
 };

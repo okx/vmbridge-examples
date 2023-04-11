@@ -30,7 +30,7 @@ describe("WASM bridge", function () {
         await evmCounter.deployed()
 
         //deploy WASM contract(include init)
-        wasmCounter = await wasmDeploy.deployWASMContract('./wasmContract/target/wasm32-unknown-unknown/release/counter.wasm');
+        wasmCounter = await wasmDeploy.deployWASMContract('./wasmContracts/Counter/target/wasm32-unknown-unknown/release/counter.wasm');
 
     })
 
