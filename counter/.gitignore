@@ -1,0 +1,8 @@
+# evm
+node_modules
+.env
+cache
+artifacts
+
+# wasm
+target
